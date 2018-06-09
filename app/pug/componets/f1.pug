@@ -1,0 +1,10 @@
+form.contentForm#contentForm(method='post' action='/' data-required='Это поле об`язательно для заполнения')
+    h3 Остались вопросы?
+    p У нас индивидуальный подход к каждомы клиенту. Оставьте заявку и мы немедленно перезвоним и проконсультируем Вас.
+    .contentForm-wrap
+        .contentForm-input.contentForm-words
+            input(type='text' name='user_name' id='user_name' placeholder='Ваше имя' required)
+        .contentForm-input.contentForm-words
+            input(type='text' name='user_phone' id='user_phone' placeholder='Ваш телефон' required)
+        .contentForm-input.contentForm-btn
+            input(type='submit' value='Заказать звонок')

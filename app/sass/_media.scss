@@ -1,0 +1,317 @@
+@media only screen and ( max-width: 1600px) {
+  .main-intro{
+    padding-top: 0;
+  }
+  .footer{
+    &-wrap{
+      padding-right: 57px;
+    }
+  }
+  .contactsInfo{
+    margin-top: 50px;
+  }
+  .contactsPerson{
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  .contentForm-input.contentForm-btn{
+    margin-top: 30px;
+  }
+  .contentForm{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and ( max-width: 1280px){
+  .footer-wrap{
+    padding-right: 20px;
+  }
+  .footer{
+    padding-left: 20px;
+  }
+  .main-language{
+    left: 375px;
+  }
+  .sidebar{
+    width: 380px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main-wrap{
+    padding-left: 380px;
+  }
+  .main-container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contentForm{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  body.open .mob-bg-close{
+    z-index: 10;
+  }
+  .sidebar{
+    z-index: 11;
+  }
+  .contactsInfo{
+    margin-top: 30px;
+  }
+  .main-container.about {
+    padding-top: 112px;
+  }
+  .contactsInfo-item{
+    margin-bottom: 20px;
+  }
+  .contactsPerson-item{
+    margin-top: 30px;
+  }
+  .main-container{
+    padding-top: 120px;
+  }
+  h2{
+    margin-top: 45px;
+    margin-bottom: 15px;
+  }
+  .content p,
+  .contentList_2 li{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .contentList_2 li p{
+    margin-bottom: 20px;
+  }
+  .main-language{
+    left: 0;
+  }
+  .contentForm{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+  .partners{
+    margin-bottom: 50px;
+  }
+  .contentForm h3{
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+  .contentForm-input.contentForm-btn{
+    margin-top: 0;
+  }
+  .burger{
+    display: block;
+  }
+  .sidebar{
+    left: -380px;
+  }
+  .main-wrap{
+    padding-left: 0;
+  }
+  .main-intro{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .main-language{
+    padding-top: 15px;
+    padding-right: 20px;
+  }
+  .main-intro h1{
+    font-size: 40px;
+  }
+  .main-intro p{
+    font-size: 16px;
+  }
+  .main-btn{
+    margin-top: 50px;
+  }
+  .contentList_1 li{
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .contentForm-wrap{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .contentForm-input{
+     display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 500px) {
+  .popup-content h6{
+    font-size: 30px;
+  }
+  .popup-content>p{
+    font-size: 16px;
+  }
+  .popup-wrap{
+    padding: 40px 20px 50px;
+  }
+  .map-container{
+    .ymaps-2-1-60-map{
+      width: 100% !important;
+    }
+  }
+  iframe{
+    overflow: hidden;
+    width: 100%;
+    max-width: 320px;
+  }
+  .contentList_1 li{
+    font-size: 14px;
+  }
+  .main-container{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 100px;
+  }
+  .contentList_2 li, .content p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .content b{
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .contentList_2 li{
+    margin-top: 0;
+  }
+  .contentForm h3{
+    font-size: 22px;
+  }
+  .contentForm{
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .contentForm-input input{
+    font-size: 16px;
+  }
+  .footer-wrap{
+    display: block;
+    text-align: center;
+    p{
+      margin-bottom: 20px;
+      &:last-child{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .contentList_2 li p{
+    padding-left: 20px;
+  }
+  .main-language a{
+    font: $rb;
+    font-size: 16px;
+  }
+  h2{
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .sidebar{
+    width: 280px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main-btn a {
+    padding: 16px 37px 13px 28px;
+  }
+  .logo p img{
+    max-width: 100%;
+  }
+  .logo p{
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .sidebar-location a{
+    font-size: 16px;
+  }
+  .sidebar-location{
+    margin-top: 15px;
+  }
+  .menu li a{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    br{
+      display: none;
+    }
+  }
+  .menu{
+    margin-top: 20px;
+  }
+  .menu li a:hover{
+    background: #fff;
+    color: #000;
+  }
+  .sidebar-callback a{
+    font-size: 16px;
+    padding-top: 15px;
+  }
+  .sidebar-callback{
+    height: 54px;
+  }
+  .burger.active{
+    left: 300px;
+  }
+  .main-intro h1{
+    font-size: 30px;
+  }
+  .main-intro p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  .main-btn{
+    margin-top: 20px;
+    a{
+      font-size: 16px;
+    }
+  }
+  .main-language a{
+    font-size: 14px;
+  }
+  .main-language{
+    padding-right: 15px;
+  }
+  .main-intro{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .contactsInfo h5{
+    font-size: 24px;
+  }
+  .contactsInfo a{
+    font-size: 14px;
+  }
+  .contactsPerson-item a{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 375px) {
+
+}
+@media only screen and (max-width: 350px) {
+  .burger.active{
+    left: 10px;
+  }
+  iframe{
+    max-width: 290px;
+  }
+}
