@@ -7,14 +7,17 @@ footer.footer
     .popup#callback
         .popup-bg
         .popup-wrap
+            .popup-close
+                span
+                span
             .popup-content
-                h6 Заказать звонок
+                h6 Перезвоним в течение 1 минуты!
                 p У нас индивидуальный подход к каждомы клиенту. Оставьте заявку и мы немедленно перезвоним и проконсультируем Вас.
                 form.callbackForm#callbackForm(method='post' action='/' data-required='Это поле об`язательно для заполнения')
                     .callbackForm-wrap
                         .callbackForm-input.callbackForm-words
-                            input(type='text' name='callback_user_name' id='callback_user_name' placeholder='Ваше имя' required)
+                            input(type='text' name='user_name' id='callback_user_name' placeholder='Ваше имя' required)
                         .callbackForm-input.callbackForm-words
-                            input(type='text' name='callback_user_phone' id='callback_user_phone' placeholder='Ваш телефон' required)
+                            input(type='text' name='user_phone' id='callback_user_phone' placeholder='Ваш телефон' required)
                         .callbackForm-input.callbackForm-btn
                             input(type='submit' value='Заказать звонок')

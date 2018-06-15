@@ -33,7 +33,7 @@
     padding-left: 20px;
   }
   .main-language{
-    left: 375px;
+    left: 380px;
   }
   .sidebar{
     width: 380px;
@@ -151,6 +151,9 @@
 
 }
 @media only screen and (max-width: 500px) {
+  .callbackForm-input.callbackForm-btn:after{
+    left: 95px;
+  }
   .popup-content h6{
     font-size: 30px;
   }
@@ -304,14 +307,22 @@
     font-size: 14px;
   }
 }
-@media only screen and (max-width: 375px) {
-
+@media only screen and (max-width: 390px) {
+  .callbackForm-input.callbackForm-btn:after{
+    left: 70px;
+  }
 }
 @media only screen and (max-width: 350px) {
+  .callbackForm-input.callbackForm-btn:after{
+    left: 50px;
+  }
   .burger.active{
     left: 10px;
   }
   iframe{
     max-width: 290px;
+  }
+  .popup-content h6{
+    font-size: 24px;
   }
 }

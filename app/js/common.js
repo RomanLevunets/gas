@@ -17,7 +17,7 @@ $(document).ready(function () {
     $('#user_phone').mask("+7(999)999-99-99");
     $('#callback_user_phone').mask("+7(999)999-99-99");
 
-    let fakeAPI = 'https://jsonplaceholder.typicode.com/posts';
+    let fakeAPI = 'mail.php';
     let dataRequiredMessage = $('#contentForm').attr('data-required');
     $('#contentForm').validate({
         rules: {
