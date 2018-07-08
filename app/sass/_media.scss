@@ -13,6 +13,9 @@
   .contactsPerson{
     padding-top: 10px;
   }
+  .content .table-content{
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 1430px) {
@@ -22,6 +25,15 @@
   .contentForm{
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .main-intro{
+    max-width: 800px;
+  }
+  .arrow-next {
+    right: -33px;
+  }
+  .arrow-prev {
+    left: -33px;
   }
 }
 
@@ -52,8 +64,31 @@
     padding-right: 10px;
   }
 }
+@media only screen and ( max-width: 1250px){
+  .arrow-prev{
+    left: 0;
+    top: auto;
+    transform: translateY(0);
+    bottom: -115px;
+  }
+  .arrow-next{
+    transform: translateY(0);
+    right: 0;
+    top: auto;
+    bottom: -115px;
+  }
+  .main-intro{
+    max-width: 600px;
+  }
+}
 
 @media only screen and (max-width: 1030px) {
+  .contentList_2-top{
+    margin-top: 30px;
+  }
+  .main-intro{
+    max-width: 800px;
+  }
   body.open .mob-bg-close{
     z-index: 10;
   }
@@ -146,11 +181,114 @@
     margin: 0 auto;
     margin-bottom: 20px;
   }
+  .arrow-prev{
+    left: -30px;
+  }
+  .arrow-next{
+    right: -30px;
+  }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
+  .contentList_2 li{
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .main-intro{
+    max-width: 750px;
+  }
+  .arrow-prev{
+    left: 0;
+    top: auto;
+    transform: translateY(0);
+    bottom: -95px;
+  }
+  .arrow-next{
+    right: 0;
+    top: auto;
+    bottom: -95px;
+    transform: translateY(0);
+  }
 
 }
+@media only screen and (max-width: 750px) {
+  .main-intro{
+    max-width: 500px;
+  }
+  .contentList_2-top{
+    display: block;
+  }
+  .contentList_2 li p{
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-left: 0;
+  }
+  .content h4{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .content h6{
+    font-size: 16px;
+  }
+  .contentList_3 li{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contentList_3{
+    margin-bottom: 20px;
+  }
+  .table_1{
+    margin-bottom: 30px;
+  }
+  .btn_list{
+    position: relative;
+    width: 150px;
+    margin-top: 15px;
+    a{
+      text-align: center;
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+  }
+  .content-img2{
+    display: block;
+    img{
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  .table-img{
+    img{
+      width: 100%;
+      max-width: 450px;
+    }
+  }
+}
 @media only screen and (max-width: 500px) {
+  .table_1{
+    tbody{
+      tr{
+        td{
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .content h6{
+    font-size: 15px;
+  }
+  .content h4{
+    font-size: 18px;
+  }
+  .arrow-prev{
+    bottom: -65px;
+  }
+  .arrow-next{
+    bottom: -65px;
+  }
+  .main-intro{
+    max-width: 400px;
+  }
   .callbackForm-input.callbackForm-btn:after{
     left: 95px;
   }
@@ -184,19 +322,28 @@
   .contentList_2 li, .content p{
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     margin-top: 10px;
   }
   .content b{
     font-size: 16px;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 0;
   }
   .contentList_2 li{
     margin-top: 0;
   }
+  .contentList_2 li h5{
+    font-size: 16px;
+  }
   .contentForm h3{
     font-size: 22px;
+  }
+  .contentList_2-top{
+    margin-top: 15px;
+  }
+  .blue-block{
+    padding: 15px;
   }
   .contentForm{
     padding-top: 20px;
@@ -215,12 +362,35 @@
       }
     }
   }
-  .contentList_2 li p{
-    padding-left: 20px;
+  .content b{
+    font-size: 14px;
+  }
+  .contentList_1 li{
+    padding: 10px 25px;
+  }
+  .blue-block p{
+    margin-bottom: 10px;
   }
   .main-language a{
     font: $rb;
     font-size: 16px;
+  }
+  .contentList_2-img{
+    width: 100%;
+    height: auto;
+    img{
+      width: 100%;
+    }
+  }
+  .contentList_2 li{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contentList_2 li p{
+    margin-top: 10px;
+  }
+  .contentList_2{
+    margin-top: 20px;
   }
   h2{
     font-size: 22px;
@@ -307,12 +477,28 @@
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 400px) {
+  .arrow-prev{
+    bottom: -135px;
+    left: 28px;
+  }
+  .arrow-next{
+    bottom: -135px;
+    right: 28px;
+  }
+  .main-intro{
+    max-width: 350px;
+  }
+}
 @media only screen and (max-width: 390px) {
   .callbackForm-input.callbackForm-btn:after{
     left: 70px;
   }
 }
 @media only screen and (max-width: 350px) {
+  .main-intro{
+    max-width: 320px;
+  }
   .callbackForm-input.callbackForm-btn:after{
     left: 50px;
   }

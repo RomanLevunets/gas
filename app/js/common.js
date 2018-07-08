@@ -17,6 +17,21 @@ $(document).ready(function () {
     $('#user_phone').mask("+7(999)999-99-99");
     $('#callback_user_phone').mask("+7(999)999-99-99");
 
+    $('.mainSlider').slick({
+        arrows: true,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        fade: true,
+        speed: 500,
+        cssEase: "ease-in-out",
+        prevArrow: '<div class="arrow-prev"></div>',
+        nextArrow: '<div class="arrow-next"></div>',
+
+
+    });
+
     let fakeAPI = 'mail.php';
     let dataRequiredMessage = $('#contentForm').attr('data-required');
     $('#contentForm').validate({
