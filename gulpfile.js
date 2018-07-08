@@ -20,6 +20,7 @@ var paths = {
         scss        : 'app/sass/**/*.scss',
         js          : 'app/js/**/*.js',
         html        : 'app/pug/*.pug',
+        html_en     : 'app/en/*.pug',
         img         : 'app/img/**/*',
         static      : 'app/static/**/*',
         fonts       : 'app/fonts/**/*',
@@ -36,6 +37,7 @@ var paths = {
         scss        : 'build/css',
         js          : 'build/js',
         html        : 'build',
+        html_en     : 'build/en',
         img         : 'build/img',
         static      : 'build/static',
         fonts       : 'build/fonts',
@@ -141,12 +143,22 @@ gulp.task('html', function () {
         .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('watch', ['browser-sync', 'vendor-css', 'vendor-js', 'fonts', 'scss', 'html', 'babel', 'static'], function () {
+gulp.task('html_en', function () {
+    return gulp.src(paths.src.html_en)
+        .pipe(pug({pretty: true}))
+        .pipe(gulp.dest(paths.dest.html_en))
+        .pipe(plumber())
+        .pipe(browserSync.reload({stream: true}));
+});
+
+
+gulp.task('watch', ['browser-sync', 'vendor-css', 'vendor-js', 'fonts', 'scss', 'html_en', 'html', 'babel', 'static'], function () {
     gulp.watch(paths.src.scss, ['scss']);
     gulp.watch('app/pug/**/*.pug', ['html']);
+    gulp.watch('app/en/**/*.pug', ['html_en']);
     gulp.watch(paths.src.js, ['babel']);
 });
 
-gulp.task('build', ['clean', 'img', 'vendor-css', 'vendor-js', 'fonts', 'scss', 'babel', 'html', 'static']);
+gulp.task('build', ['clean', 'img', 'vendor-css', 'vendor-js', 'fonts', 'scss', 'html_en', 'babel', 'html', 'static']);
 
 gulp.task('default', ['browser-sync', 'watch']);

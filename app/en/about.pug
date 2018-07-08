@@ -1,0 +1,106 @@
+include mixin/mixin
+doctype html
+html
+    head
+        include componets/head
+    body
+        .wrapper
+            main.main
+                .burger
+                    span
+                    span
+                    span
+                    span
+                    span
+                .mob-bg-close
+                aside.sidebar
+                    .sidebar-wrap
+                        .sidebar-top
+                            .logo
+                                p
+                                    img(src='img/Logo.png')
+                            .sidebar-location
+                                a(href='https://yandex.ua/maps/35/krasnodar/?lang=ru&mode=search&text=%D0%B3.%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%2C%20%D1%83%D0%BB.%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F%2C%20127&sll=30.523541%2C50.450418&sspn=0.504684%2C0.184791&ll=38.975250%2C45.040878&z=17' target='_blank') г. Краснодар, ул. Красная, 127
+                                .sidebar-phone
+                                    a(href='tel:89182100505') 8 (918) 210-05-05
+                            .sidebar-callback
+                                a(href='#')
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 338.1 334.02"><defs><style>.cls-1{}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M0,55.87c1.6-6.6,3.1-13.2,5-19.7.9-3.1,2.6-6.1,4-9.4,27.2,27.7,54,54.9,81.1,82.5-6.9,7.4-5.7,16.7-.3,25.5,4.9,8,10,16.2,16.5,22.9,23.6,24.4,47.9,48.1,71.9,72.2,9.8,9.8,21.9,15.5,34.6,20.3,4.4,1.7,8.2-.1,11.6-2.7,1.4-1.1,2.7-2.4,4.3-3.8l80.7,82.2a38.1,38.1,0,0,1-18.7,7c-37.9,3.8-73.5-1.4-106.9-21.9-50.7-31.1-95.2-68.8-132.3-115.2-17.3-21.7-33-44.6-41.3-71.3C6,110.88,4,96.58,1,82.58c-.3-1.3-.7-2.5-1-3.7C0,71.17,0,63.57,0,55.87Z"/><path class="cls-1" d="M338,294.87c-3.8,9.1-11.3,14.9-18.2,21.3-27.2-27.4-54.3-54.6-80.7-81.3,4.4-4.8,8.8-10.2,14.1-14.8,1.9-1.6,6.2-2,8.6-1.1a34.16,34.16,0,0,1,10.7,7c20.2,19.6,40.2,39.4,60.2,59.1,1.9,1.8,3.6,3.8,5.4,5.7C338,292.17,338,293.58,338,294.87Z"/><path class="cls-1" d="M101.8,97.37q-41.7-40.8-82.1-80.5C24.8,11.37,29.5,5.77,35,1c1.7-1.4,5.7-1.1,8.3-.3s4.8,2.9,6.8,4.8q30.3,29.7,60.5,59.7a42.85,42.85,0,0,1,4,4.5c4.7,6.5,4.4,10-1.1,15.7Z"/></g></g></svg>
+                                    | Заказать звонок
+                        nav.sidebar-nav
+                            ul.menu
+                                li
+                                    a(href='index.html') Главная
+                                li
+                                    a(href='construction_works.html') Строительные работы
+                                li
+                                    a(href='block-modular_installations.html') Блочно-модульные установки
+                                li
+                                    a(href='oil_gas_petrochemical_equipment.html') Нефтегазовое и нефтехимическое оборудование
+                                li
+                                    a(href='power_equipment.html') Энергетическое оборудование
+                                li
+                                    a(href='installations_for_measuring_debit_wells.html') Установки для замера<br> дебета скважин
+                                li
+                                    a(href='design_work.html') Проектные работы
+                                li
+                                    a(href='constructor_work.html') Конструкторские работы
+                                li
+                                    a(href='installation_commissioning_works.html') Монтажные<br> и пуско-наладочные работы
+                                li.active
+                                    a(href='about.html') О компании
+
+                .main-wrap
+                    .main-language(style="background-image: url('img/top_bg.jpg');")
+                        a(href='#') Switch to English
+                    .main-container.about
+                        .content
+                            h2 О нас
+                            p Научно-Производственное Объединение «НефтеГазАппарат» входит в группу компаний «МАНИС», производственный модуль компании основан на базе Краснодарского Эксперимент
+                            .contacts
+                                .contactsInfo
+                                    .contactsInfo-left
+                                        h5 Контакты
+                                        .contactsInfo-item
+                                            p Адрес головного офиса в Краснодаре
+                                            a( target='_blank' href='https://yandex.ua/maps/35/krasnodar/?lang=ru&mode=search&text=%D0%B3.%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%2C%20%D1%83%D0%BB.%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F%2C%20127&sll=30.523541%2C50.450418&sspn=0.504684%2C0.184791&ll=38.975250%2C45.040878&z=17') 350020, г. Краснодар, ул. Красная, 127<br>
+                                            a(href='tel:+79182100505') Тел. +7 (918) 210-05-05<br>
+                                            a(href='mailto:npo-nga@mail.ru') npo-nga@mail.ru
+                                        .contactsInfo-item
+                                            p Производственные и офисные помещения
+                                            a(target='_blank' href='https://yandex.ua/maps/35/krasnodar/?lang=ru&mode=search&text=%D0%B3.%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%2C%20%D1%83%D0%BB.%20%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%2C%2010&sll=38.975250%2C45.040878&sspn=0.015771%2C0.006412&ll=39.017920%2C45.072465&z=17') г. Краснодар, ул. Солнечная, 10<br>
+                                            a(target='_blank' href='https://yandex.ua/maps/213/moscow/?ll=37.551483%2C55.655788&z=17&mode=search&text=%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9D%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%B7%D0%B4%208%2C%20%D1%81%D1%82%D1%80.1&sll=30.523541%2C50.450418&sspn=0.504684%2C0.184791') г. Москва, Научный проезд 8, стр.1<br>
+                                            a(target='_blank' href='https://yandex.ua/maps/66/omsk/?lang=ru&mode=search&text=%D0%B3.%20%D0%9E%D0%BC%D1%81%D0%BA%2C%20%D1%83%D0%BB.%20%D0%9A%D0%B0%D1%80%D0%B1%D1%8B%D1%88%D0%B5%D0%B2%D0%B0%2C%201&sll=39.017920%2C45.072465&sspn=0.015771%2C0.006409&ll=73.394470%2C54.947067&z=17') г. Омск, ул. Карбышева, 1<br>
+                                            a(target='_blank' href='https://yandex.ua/maps/66/omsk/?lang=ru&mode=search&text=%D0%B3.%20%D0%9E%D0%BC%D1%81%D0%BA%2C%20%D1%83%D0%BB.%2027-%D0%B0%D1%8F%20%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%B0%D1%8F%2C%2048&sll=73.394470%2C54.947067&sspn=0.015771%2C0.005206&ll=73.383618%2C55.025390&z=17') г. Омск, ул. 27-ая Северная, 48<br>
+                                        .contactsInfo-item
+                                            p Официальный партнер и представитель<br> АО «СпецЭнергоПроект»
+                                            a(target='_blank' href='https://yandex.ua/maps/213/moscow/?ll=37.563152%2C55.678900&z=17&mode=search&text=%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9F%D1%80%D0%BE%D1%84%D1%81%D0%BE%D1%8E%D0%B7%D0%BD%D0%B0%D1%8F%2C%20%D0%B4%D0%BE%D0%BC%2026%2F44&sll=37.551483%2C55.655788&sspn=0.015771%2C0.005113') г. Москва, ул. Профсоюзная, дом 26/44<br>
+                                            a(href='tel:+74957097211') Тел. +7 (495) 709-72-11
+                                    .contactsInfo-right
+                                        <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3A0fcc171b899cf1ac96aa3d83ca40f2a66ff9326eb803df09c276d3dc0fddba1b&amp;source=constructor" frameborder="0"></iframe>
+                                .contactsPerson
+                                    .contactsPerson-wrap
+                                        .contactsPerson-item
+                                            p Михаил Геннадиевич Дубовиков
+                                            span Генеральный директор
+                                            a(href='tel:+79284200505') +7 (928) 420-05-05<br>
+                                            a(href='mailto:dubovikovmg@yandex.ru') dubovikovmg@yandex.ru
+                                        .contactsPerson-item
+                                            p Борис Петрович Барковский
+                                            span Коммерческий директор
+                                            a(href='tel:+79182333344') +7 (918) 233-33-44<br>
+                                            a(href='mailto:fastfurious333@gmail.com') fastfurious333@gmail.com
+                                        .contactsPerson-item
+                                            p Олег Евгеньевич Багмет
+                                            span Директор международных поставок
+                                            a(href='tel:+79183971071') +7 (918) 397-10-71<br>
+                                            a(href='mailto:bagmet83@mail.ru') bagmet83@mail.ru
+                                        .contactsPerson-item
+                                            p Игорь Борисович Вахрушев
+                                            span Технический директор
+                                            a(href='tel:+79182712008') +7 (918) 271-20-08<br>
+                                            a(href='mailto:vahryshev70@gmail.com') vahryshev70@gmail.com
+                            include componets/f1
+                            include componets/partners
+                    include componets/footer
+        include componets/scripts

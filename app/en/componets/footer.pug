@@ -1,0 +1,23 @@
+footer.footer
+    .footer-wrap
+        p All rights reserved
+        p Development and promotion
+            a(href='http://deepprofy.ru/') DeepProfy
+.hidden
+    .popup#callback
+        .popup-bg
+        .popup-wrap
+            .popup-close
+                span
+                span
+            .popup-content
+                h6 We will call back within 1 minute!
+                p We have an individual approach to each client leave a request and we will immediately call back and advise you.
+                form.callbackForm#callbackForm(method='post' action='/' data-required='This field is required')
+                    .callbackForm-wrap
+                        .callbackForm-input.callbackForm-words
+                            input(type='text' name='user_name' id='callback_user_name' placeholder='Your name' required)
+                        .callbackForm-input.callbackForm-words
+                            input(type='text' name='user_phone' id='callback_user_phone' placeholder='Your phone number' required)
+                        .callbackForm-input.callbackForm-btn
+                            input(type='submit' value='Request a call')

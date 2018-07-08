@@ -1,0 +1,10 @@
+form.contentForm#contentForm(method='post' action='/' data-required='Это поле об`язательно для заполнения')
+    h3 Do you have any more questions?
+    p We have an individual approach to each client leave a request and we will immediately call back and advise you
+    .contentForm-wrap
+        .contentForm-input.contentForm-words
+            input(type='text' name='user_name' id='user_name' placeholder='Your name' required)
+        .contentForm-input.contentForm-words
+            input(type='text' name='user_phone' id='user_phone' placeholder='Your phone number' required)
+        .contentForm-input.contentForm-btn
+            input(type='submit' value='Request a call')
