@@ -23,6 +23,8 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         fade: true,
         speed: 500,
         cssEase: "ease-in-out",
@@ -30,6 +32,11 @@ $(document).ready(function () {
         nextArrow: '<div class="arrow-next"></div>',
 
 
+    });
+    setTimeout(()=>{
+       $('.main-intro').css({
+            'opacity': '1'
+       }, 100);
     });
 
     let fakeAPI = 'mail.php';

@@ -15,6 +15,22 @@
   max-width: 1170px;
   margin: 0 auto;
 }
+.content .content-blue-block{
+  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #00a0e3;
+  h2{
+    color: #fff;
+  }
+  p{
+    color: #fff;
+    font: $rb;
+    font-size: 19px;
+    line-height: 27px;
+  }
+}
 .main{
   background-size: cover;
   background-position: center;
@@ -36,6 +52,8 @@
     align-items: center;
   }
   &-intro{
+    transition: opacity .2s ease-in-out;
+    opacity: 0;
   }
 }
 .sidebar::-webkit-scrollbar {
@@ -881,7 +899,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .contactsInfo{
-  margin-top: 85px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

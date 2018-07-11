@@ -265,6 +265,14 @@
   }
 }
 @media only screen and (max-width: 500px) {
+  .content .content-blue-block p{
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 20px;
+  }
+  .content .content-blue-block{
+    padding-bottom: 20px;
+  }
   .table_1{
     tbody{
       tr{
